@@ -3,10 +3,15 @@
 int main(void) {
 	int i,n,sum=0;
 	scanf("%d",&n);
-	for(i=1;i<=n;i++)
+	if(n>0)
 	{
-		sum=sum+i;
+		for(i=1;i<=n;i++)
+		{
+			sum=sum+i;
+		}
+		printf("%d",sum);
 	}
-	printf("%d",sum);
+	else
+		printf("0");
 	return 0;
 }
